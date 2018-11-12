@@ -17,19 +17,19 @@ namespace StairsAndShit.Core.ApplicationService.Impl
 	    
 	    public Product CreateProduct(Product newProduct)
 	    {
-		    if (newProduct.Name == null)
-		    {
-			    throw new InvalidDataException("You need to specify products name");
-		    }
-		    if (newProduct.Desc == null)
-		    {
-			    throw new InvalidDataException("You need to specify products description");
-		    }
-		    if (newProduct.Price <0.1)
-		    {
-			    throw new InvalidDataException("Price cannot be smaller than 0.1");
-		    }
-		    
+//		    if (newProduct.Name == null)
+//		    {
+//			    throw new InvalidDataException("You need to specify products name");
+//		    }
+//		    if (newProduct.Desc == null)
+//		    {
+//			    throw new InvalidDataException("You need to specify products description");
+//		    }
+//		    if (newProduct.Price <0.1)
+//		    {
+//			    throw new InvalidDataException("Price cannot be smaller than 0.1");
+//		    }
+//		    
 		    var createdProduct =_productRepository.Create(newProduct);
 		    
 		    return createdProduct;
