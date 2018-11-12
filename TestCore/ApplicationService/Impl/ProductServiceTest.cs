@@ -300,7 +300,7 @@ namespace TestCore.ApplicationService.Impl
 
             Exception ex = Assert.Throws<InvalidDataException>(() => 
                 testedClas.ReadAllProducts(filter));
-            Assert.Equal("Index out bounds, CurrentPage is to hig", ex.Message);     
+            Assert.Equal("Index out bounds, CurrentPage is to high", ex.Message);     
         }
     }
 }
