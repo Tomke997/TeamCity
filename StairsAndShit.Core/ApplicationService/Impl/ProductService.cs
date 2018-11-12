@@ -17,6 +17,7 @@ namespace StairsAndShit.Core.ApplicationService.Impl
 	    
 	    public Product CreateProduct(Product newProduct)
 	    {
+/*
 		    if (newProduct.Name == null)
 		    {
 			    throw new InvalidDataException("You need to specify products name");
@@ -29,7 +30,8 @@ namespace StairsAndShit.Core.ApplicationService.Impl
 		    {
 			    throw new InvalidDataException("Price cannot be smaller than 0.1");
 		    }
-		    
+		    */
+
 		    var createdProduct =_productRepository.Create(newProduct);
 		    
 		    return createdProduct;
